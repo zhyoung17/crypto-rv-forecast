@@ -3,9 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
-*.so
-
 # Distribution / packaging
 .Python
 build/
@@ -169,3 +166,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+data/
+results/logs/
+__pycache__/
+*.ipynb_checkpoints
