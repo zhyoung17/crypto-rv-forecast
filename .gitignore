@@ -167,7 +167,8 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-data/
+data/processed/
+data/raw/
 results/logs/
 __pycache__/
 *.ipynb_checkpoints
