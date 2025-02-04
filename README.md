@@ -68,7 +68,7 @@ The project uses publicly available datasets:
 
 * **Cryptocurrency Price History** : Daily and minute-resolution data for Bitcoin, Ethereum, and other cryptocurrencies.
 * **Sentiment Data** : Extracted from platforms like Twitter and Reddit (e.g., WallStreetBets subreddit).
-* **Macroeconomic Indicators** : From the FREDMD database (e.g., GDP, inflation).
+* **Macroeconomic Indicators** : From the FREDMD database (e.g., GDP, inflation). 
 * **Bitcoin Futures Data** : Includes futures prices and implied volatility.
 
 ---
