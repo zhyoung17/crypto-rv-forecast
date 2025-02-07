@@ -172,3 +172,5 @@ data/raw/
 results/logs/
 __pycache__/
 *.ipynb_checkpoints
+models/tuning_results/
+results/models/
