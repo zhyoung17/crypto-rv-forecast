@@ -172,3 +172,6 @@ data/raw/
 results/logs/
 __pycache__/
 *.ipynb_checkpoints
+notebooks/models/tuning_results/
+notebooks/models/garch_lstm_tuning_results/
+results/models/
