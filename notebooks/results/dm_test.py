@@ -1,3 +1,9 @@
+# Import libraries
+from scipy.stats import t
+import collections
+import pandas as pd
+import numpy as np
+
 # Author   : John Tsang
 # Date     : December 7th, 2017
 # Purpose  : Implement the Diebold-Mariano Test (DM test) to compare 
@@ -82,11 +88,6 @@ def dm_test(actual_lst, pred1_lst, pred2_lst, h = 1, crit="MSE", power = 2):
     if (error_code[0] == -1):
         raise SyntaxError(error_code[1])
         return
-    # Import libraries
-    from scipy.stats import t
-    import collections
-    import pandas as pd
-    import numpy as np
     
     # Initialise lists
     e1_lst = []
