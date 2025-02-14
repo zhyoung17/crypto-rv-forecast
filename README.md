@@ -8,15 +8,16 @@ Code repository for group component of final year Capstone project.
 
 This project focuses on exploring and evaluating various methodologies for forecasting volatility in cryptocurrency markets. The primary goal is to identify the best models and key driving features of predicted volatility, with applications in algorithmic trading, risk management, and cryptocurrency options pricing. Additionally, we aim to corroborate findings from literature by training similar models and adapting them to different use cases across varying time resolutions.
 
----
+This project specifically focuses on using 5 different econometrics and ML models to predict the volatility of a cryptocurrency called Ethereum (ETH). We will compare the performance of the models using metrics such as RMSE, MAPE, etc... We will also compare the forecasts using the Diebold-Mariano test.
+
+Our findings showed that traditional econometrics method known as Heterogenous Autroregression (HAR) performed the best when it came to predicting volatility, showing the lowest RMSE, MAPE, and Q-Likelihood.
 
 ## **Repository Structure**
 
 ```bash
-volatility-forecasting-project/
+dse4101-group/
 ├── data/                  # Raw, processed, and external datasets
 ├── notebooks/             # Jupyter notebooks for analysis and modeling
-├── scripts/               # Python scripts for data processing, modeling, and evaluation
 ├── reports/               # Proposal, literature review, and final report
 ├── results/               # Model outputs, plots, and logs
 ├── environment.yml        # Conda environment setup
@@ -67,11 +68,7 @@ volatility-forecasting-project/
 The project uses publicly available datasets:
 
 * **Cryptocurrency Price History** : Daily and minute-resolution data for Bitcoin, Ethereum, and other cryptocurrencies.
-* **Sentiment Data** : Extracted from platforms like Twitter and Reddit (e.g., WallStreetBets subreddit).
-* **Macroeconomic Indicators** : From the FREDMD database (e.g., GDP, inflation). 
-* **Bitcoin Futures Data** : Includes futures prices and implied volatility.
-
----
+* **Macroeconomic Indicators** : From the FREDMD database (e.g., GDP, inflation, SPY prices (Monthly)).
 
 ## **Contributing**
 
@@ -103,4 +100,4 @@ For questions or suggestions, feel free to reach out:
 
 * **[Ethan Cheung](https://github.com/ethan-cyj/)**
 * **[Young Zhan Heng](https://github.com/zhyoung17/)**
-* [**Luo Xinming**](https://github.com/team-member-2)
+* [**Luo Xinming**](https://github.com/kiwi-lemongrass)
