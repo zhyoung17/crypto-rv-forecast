@@ -12,6 +12,8 @@ This project specifically focuses on using 5 different econometrics and ML model
 
 Our findings showed that traditional econometrics method known as Heterogenous Autroregression (HAR) performed the best when it came to predicting volatility, showing the lowest RMSE, MAPE, and Q-Likelihood.
 
+[View the Final Report here.](final report.pdf)
+
 ## **Repository Structure**
 
 ```bash
