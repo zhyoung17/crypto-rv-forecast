@@ -1,0 +1,46 @@
+Risk Group,Frequency,Model,DM Statistic,p-value,Recommendation
+high,3hourly,bagging_dt,4.069462938548934,4.7789552517945065e-05,EWMA model should be used
+high,3hourly,har,7.053845377441794,1.957712053120948e-12,EWMA model should be used
+high,3hourly,garch,6.413744686368583,1.539904544721982e-10,EWMA model should be used
+high,3hourly,rf,4.423390323517413,9.905994528058002e-06,EWMA model should be used
+high,3hourly,svr,6.097852331378206,1.1491303056313414e-09,EWMA model should be used
+high,daily,bagging_dt,-1.5253011854662712,0.12768187386291344,No significant difference
+high,daily,har,0.980475044545524,0.3272250825093884,No significant difference
+high,daily,garch,-0.06820412614500349,0.9456446126539513,No significant difference
+high,daily,rf,-0.9531834070585395,0.34085983896754557,No significant difference
+high,daily,svr,-1.7747756183883356,0.07641394940184895,No significant difference
+high,hourly,bagging_dt,-10.5987740934409,3.6682737465120344e-26,Alternate model should be used
+high,hourly,har,-6.645092713397013,3.125612951656413e-11,Alternate model should be used
+high,hourly,garch,-17.78833944346342,3.96082715166068e-70,Alternate model should be used
+high,hourly,rf,-10.223754673252094,1.837675692008281e-24,Alternate model should be used
+high,hourly,svr,-11.03152748722348,3.3826338394872735e-28,Alternate model should be used
+low,3hourly,bagging_dt,2.3510096282265875,0.01875806443622604,EWMA model should be used
+low,3hourly,har,5.021534107514498,5.289684835876718e-07,EWMA model should be used
+low,3hourly,garch,10.513659360377112,1.3140739108945714e-25,EWMA model should be used
+low,3hourly,rf,2.6755056863879334,0.00748401718522377,EWMA model should be used
+low,3hourly,svr,3.228339629071424,0.0012525040660837958,EWMA model should be used
+low,daily,bagging_dt,-2.5293387731042225,0.011668628439969726,Alternate model should be used
+low,daily,har,1.2283141436258542,0.21978412313964674,No significant difference
+low,daily,garch,-0.41666751716492123,0.6770624232181884,No significant difference
+low,daily,rf,-2.096301188841756,0.03645062657334931,Alternate model should be used
+low,daily,svr,1.3589680584239314,0.17463918355592148,No significant difference
+low,hourly,bagging_dt,5.088896797884554,3.6412970771513214e-07,EWMA model should be used
+low,hourly,har,9.313393825048248,1.391558031162109e-20,EWMA model should be used
+low,hourly,garch,-3.2190586689628877,0.0012886222238487528,Alternate model should be used
+low,hourly,rf,5.475978850803313,4.414907430981832e-08,EWMA model should be used
+low,hourly,svr,1.4967699369933618,0.13447236235447718,No significant difference
+medium,3hourly,bagging_dt,5.538478970137198,3.343244301143055e-08,EWMA model should be used
+medium,3hourly,har,5.207365644391506,2.0585641015986108e-07,EWMA model should be used
+medium,3hourly,garch,7.272300062009808,4.59978412590616e-13,EWMA model should be used
+medium,3hourly,rf,5.331411011938061,1.0545601251113944e-07,EWMA model should be used
+medium,3hourly,svr,5.92444121645891,3.5285023710606635e-09,EWMA model should be used
+medium,daily,bagging_dt,-1.5694450457429092,0.11754187515272563,No significant difference
+medium,daily,har,0.1690860764696888,0.8658367784500538,No significant difference
+medium,daily,garch,2.188062432675465,0.02939475866844228,EWMA model should be used
+medium,daily,rf,-1.5139989073094777,0.13102249751125744,No significant difference
+medium,daily,svr,0.32147666856367463,0.7480610532240146,No significant difference
+medium,hourly,bagging_dt,2.219275123238045,0.02649525782086023,EWMA model should be used
+medium,hourly,har,8.789532666144668,1.8077198198840105e-18,EWMA model should be used
+medium,hourly,garch,-6.443131893981602,1.236292885217264e-10,Alternate model should be used
+medium,hourly,rf,2.4047335269368433,0.016206274619050155,EWMA model should be used
+medium,hourly,svr,1.0545164065385753,0.29167760358698475,No significant difference
