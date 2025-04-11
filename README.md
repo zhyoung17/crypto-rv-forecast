@@ -1,105 +1,110 @@
-# DSE4101-Group
-
-Code repository for group component of final year Capstone project.
-
-# **Volatility Forecasting in Cryptocurrency Markets**
+# Forecasting Volatility of Various Cryptocurrencies
 
 ## **Overview**
 
-This project focuses on exploring and evaluating various methodologies for forecasting volatility in cryptocurrency markets. The primary goal is to identify the best models and key driving features of predicted volatility, with applications in algorithmic trading, risk management, and cryptocurrency options pricing. Additionally, we aim to corroborate findings from literature by training similar models and adapting them to different use cases across varying time resolutions.
+This project investigates various methodologies for forecasting volatility within cryptocurrency markets. The primary objective is to identify the most effective models and understand the key factors influencing predicted volatility. The insights gained can be applied to algorithmic trading strategies, risk management frameworks, and the pricing of cryptocurrency options.
 
-This project specifically focuses on using 5 different econometrics and ML models to predict the volatility of a cryptocurrency called Ethereum (ETH). We will compare the performance of the models using metrics such as RMSE, MAPE, etc... We will also compare the forecasts using the Diebold-Mariano test.
+This individual project builds upon prior group work by exploring six distinct econometric and machine learning models to predict the volatility of six different cryptocurrencies across varying time resolutions. The performance of these models is rigorously compared using metrics such as Root Mean Squared Error (RMSE), Mean Absolute Percentage Error (MAPE), and the Diebold-Mariano (DM) Test.
 
-Our findings showed that traditional econometrics method known as Heterogenous Autroregression (HAR) performed the best when it came to predicting volatility, showing the lowest RMSE, MAPE, and Q-Likelihood.
+A key finding of this study is the robustness of the traditional econometric forecasting method, Exponentially Weighted Moving Average (EWMA), which provided competitive results and served as a sufficient baseline against more advanced machine learning models.
 
-[View the Final Report here.](final report.pdf)
+Final report can be found [here](final_report.pdf)
 
 ## **Repository Structure**
 
 ```bash
-dse4101-group/
-├── data/                  # Raw, processed, and external datasets
-├── notebooks/             # Jupyter notebooks for analysis and modeling
-├── reports/               # Proposal, literature review, and final report
-├── results/               # Model outputs, plots, and logs
-├── environment.yml        # Conda environment setup
-└── README.md              # Project overview (this file)
+crypto-rv-forecast/
+├── data/             # Raw, processed, and external datasets
+├── notebooks/        # Jupyter notebooks for data analysis, modeling, and experimentation
+├── reports/          # Project documentation including proposal, literature review, and the final report
+├── results/          # Model outputs, visualizations, and evaluation logs
+├── environment.yml     # Conda environment configuration file
+├── requirements.txt    # Pip requirements file (alternative to environment.yml)
+└── README.md         # Project overview and setup instructions (this file)
 ```
-
----
-
-## **Features**
-
-* **Comprehensive Literature Review** : Evaluation of traditional statistical models, machine learning techniques, and hybrid approaches.
-* **Model Training and Evaluation** : Testing models like GARCH, LSTM, Random Forests, and hybrid approaches.
-* **Feature Selection** : Incorporating market sentiment, macroeconomic indicators, and volume-based features.
-* **Applications** : Adapting forecasting techniques for algorithmic trading, options pricing, and long-term investment strategies.
 
 ---
 
 ## **Getting Started**
 
+This section guides you through the necessary steps to set up and run the project.
+
 ### **Prerequisites**
 
-* Python 3.10+
-* Conda package manager (or pip)
+* Python 3.10 or higher
+* Conda package manager (recommended) or pip
 
 ### **Setup**
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ethan-cyj/DSE4101-Group.git
-   cd DSE4101-Group
-   ```
-2. Create the environment (on macOS):
-   ```bash
-   python3 -m venv env
-   source env/bin/activate
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+**Using Conda (Recommended):**
 
-### **Run Jupyter Notebooks**
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/zhyoung17/crypto-rv-forecast.git](https://github.com/zhyoung17/crypto-rv-forecast.git)
+    cd crypto-rv-forecast
+    ```
+2.  Create the Conda environment:
+    ```bash
+    conda env create -f environment.yml
+    conda activate crypto-rv-forecast
+    ```
+
+**Alternatively, using venv and pip:**
+
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/zhyoung17/crypto-rv-forecast.git](https://github.com/zhyoung17/crypto-rv-forecast.git)
+    cd crypto-rv-forecast
+    ```
+2.  Create a virtual environment:
+    ```bash
+    python3 -m venv env
+    source env/bin/activate  # On macOS and Linux
+    # env\Scripts\activate   # On Windows
+    ```
+3.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### **Running Jupyter Notebooks**
+
+1.  Navigate to the `notebooks` directory:
+    ```bash
+    cd notebooks
+    ```
+2.  Start Jupyter Notebook or JupyterLab:
+    ```bash
+    jupyter notebook
+    # or
+    jupyter lab
+    ```
+3.  Open the desired notebooks and follow the instructions within.
 
 ---
 
 ## **Datasets**
 
-The project uses publicly available datasets:
+This project utilizes publicly available datasets for analysis:
 
-* **Cryptocurrency Price History** : Daily and minute-resolution data for Bitcoin, Ethereum, and other cryptocurrencies.
-* **Macroeconomic Indicators** : From the FREDMD database (e.g., GDP, inflation, SPY prices (Monthly)).
-
-## **Contributing**
-
-Contributions are welcome! To collaborate:
-
-1. Fork the repository.
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Commit your changes and push:
-   ```bash
-   git commit -m "Add your feature description"
-   git push origin feature/your-feature-name
-   ```
-4. Open a pull request.
-
----
-
-## **License**
-
-This project is licensed under the MIT License. See the [LICENSE](https://chatgpt.com/g/g-678f118d47f081918da95d90bd10d502-dse4101-fyp-assistant/c/LICENSE) file for more details.
-
----
+* **Cryptocurrency Price History:** Hourly resolution historical price data for Bitcoin (BTC), Ethereum (ETH), Solana (SOL), Ripple (XRP), and Dogecoin (DOGE). Data was obtained using the Yahoo Finance API.
 
 ## **Contact**
 
-For questions or suggestions, feel free to reach out:
+For any questions, suggestions, or feedback regarding this project, please feel free to reach out to:
 
-* **[Ethan Cheung](https://github.com/ethan-cyj/)**
-* **[Young Zhan Heng](https://github.com/zhyoung17/)**
-* [**Luo Xinming**](https://github.com/kiwi-lemongrass)
+* **Young Zhan Heng:** [GitHub](https://github.com/zhyoung17/)
+
+---
+
+## **Acknowledgement**
+
+This individual project was completed by **Young Zhan Heng**, a student at the National University of Singapore. It builds upon the foundational work of a group project that included the following contributors:
+
+* Ethan Cheung ([GitHub](https://github.com/ethan-cyj/))
+* Young Zhan Heng ([GitHub](https://github.com/zhyoung17/))
+* Luo Xinming ([GitHub](https://github.com/kiwi-lemongrass))
+
+I would like to express my sincere gratitude to all the educators who have guided me throughout my undergraduate education at NUS, and especially to my project mentor, Professor Huang Ta Cheng, for his invaluable guidance and support.
+
+---
